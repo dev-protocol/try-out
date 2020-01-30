@@ -1,8 +1,8 @@
 {
-	"name": "template-repos-ts-sol",
+	"name": "try-out",
+	"private": true,
 	"version": "1.0.0",
 	"description": "Template repository for using TypeScript and Solidity",
-	"main": "index.js",
 	"scripts": {
 		"test": "truffle test test/*.ts",
 		"pretest": "npm run generate",
@@ -14,11 +14,12 @@
 		"lint:solium": "solium --dir . --fix",
 		"lint:format": "prettier --write '**/*.{sol,js,json,md,yml}'",
 		"build": "tsc -p tsconfig.build.json",
-		"prebuild": "npm run generate"
+		"prebuild": "rm -f migrations/*.js && npm run generate"
 	},
 	"author": "",
 	"license": "MPL-2.0",
 	"devDependencies": {
+		"@truffle/hdwallet-provider": "^1.0.29",
 		"@types/dotenv": "^8.2.0",
 		"@typescript-eslint/eslint-plugin": "^2.17.0",
 		"@typescript-eslint/parser": "^2.17.0",
