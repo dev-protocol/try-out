@@ -19,7 +19,7 @@
 	"author": "",
 	"license": "MPL-2.0",
 	"devDependencies": {
-		"@truffle/hdwallet-provider": "1.0.29",
+		"@truffle/hdwallet-provider": "1.0.34",
 		"@types/dotenv": "8.2.0",
 		"@typescript-eslint/eslint-plugin": "2.17.0",
 		"@typescript-eslint/parser": "2.17.0",
